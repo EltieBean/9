@@ -1,0 +1,16 @@
+from tkinter import *
+root = Tk()
+root.geometry('150x150')
+def hi():
+    name = entry.get()
+    if name == '':
+        pass
+    else:
+        label.config(text="Привет, " + name)
+entry = Entry(root)
+button = Button(root, text="Приветствовать", command=hi)
+label = Label(root, text="")
+label.pack()
+entry.pack()
+button.pack()
+root.mainloop()
